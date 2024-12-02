@@ -1,0 +1,153 @@
+<?php include_once("process_form.php") ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="text-center py-3">
+        <h1 class="text-2xl font-bold">Laser Technologies</h1>
+    </header>
+
+    <!-- Get in Touch Section -->
+    <section class="container mt-4">
+        <div class="row">
+            <!-- Left side: Get in Touch -->
+            <div class="col-md-6">
+                <div class="contact-card">
+                    <h1>Get in touch</h1>
+                    <p>Need our expertise for choosing your next laser machine?</p>
+                </div>
+            </div>
+
+            <!-- Right side: Form Section -->
+            <div class="col-md-6">
+                <h2>Fill out the form to get free consultation</h2>
+                <div class="form-section">
+                    <form class="row g-3" action="process_form.php" method="POST">
+                        <div class="col-md-6">
+                            <input type="text" name="name" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" name="org_name" class="form-control" placeholder="Organization Name">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" name="contact_number" class="form-control" placeholder="Contact Number">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" name="email" class="form-control" placeholder="Email ID">
+                        </div>
+                        <div class="col-md-6">
+                            <textarea name="remark" class="form-control" rows="4" placeholder="Remark"></textarea>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="captcha">
+                                <input type="checkbox" name="captcha" required>
+                                <label for="captcha">I'm not a robot</label>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-dark w-100">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Message -->
+    <div id="form-message" class="mt-3"></div>
+
+    
+
+    <!-- Map Section -->
+    <section class="map-section mt-5">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509656!2d144.9630573153151!3d-37.814107979751735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf57764dc7d2b3c0!2sLaser%20Technologies!5e0!3m2!1sen!2sin!4v1679944445063!5m2!1sen!2sin" allowfullscreen></iframe>
+        <div class="center-content">
+            <h2>Headquarters Office</h2>
+            <p>Laser Technologies Pvt Ltd<br>
+               PAP/R/406 Rabale MIDC, Navi Mumbai - 400701<br>
+               Landline: 022 4131 0999
+            </p>
+            <a href="#" class="btn btn-outline-light">Google Map Link</a>
+        </div>
+    </section>
+
+    <!-- Office Locations -->
+    <section class="container my-5">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <h2 class="heading">Mumbai</h2>
+                <p>PAP/R/406 Rabale MIDC<br>Near Dol Electric Company<br>Rabale MIDC, Navi Mumbai-400701</p>
+            </div>
+            <div class="col-md-4">
+                <h2 class="heading">Pune</h2>
+                <p>"S" Block, Plot No. 186,<br>MIDC, Bhosari,<br>Pune-411026</p>
+            </div>
+            <div class="col-md-4">
+                <h2 class="heading">Gujarat</h2>
+                <p>A-5, GF, Barcelona Multiple<br>Business Campus, Odhav Ring<br>Road Circle, Ahmedabad,<br>Gujarat-382430</p>
+            </div>
+            <div class="col-md-4 mt-4">
+                <h2 class="heading">Delhi</h2>
+                <p>S-98 Second Floor<br>Phase-2, Okhla Industrial<br>Area, New Delhi-110020</p>
+            </div>
+            <div class="col-md-4 mt-4">
+                <h2 class="heading">Karnataka</h2>
+                <p>77/78/B. Janapriya Commercial<br>Complex, Magadi Main Rd,<br>Sunkadakatte, Bengaluru<br>Karnataka-560091</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How Can We Help Section -->
+    <section class="container text-center my-5">
+        <h3 style="font-size: 48px;">How Can We Help?</h3>
+        <div class="row mt-4">
+            <div class="col-md-3">
+                <p><i class="bi bi-person-vcard-fill" style="font-size: 48px;"></i><br>Schedule a <br><strong>Demo</strong></p>
+            </div>
+            <div class="col-md-3">
+                <p><i class="bi bi-file-earmark-text" style="font-size: 48px;"></i><br>Request a <br><strong>Quote</strong></p>
+            </div>
+            <div class="col-md-3">
+                <p><i class="bi bi-layout-text-window-reverse" style="font-size: 48px;"></i><br>Send us a <br><strong>Sample</strong></p>
+            </div>
+            <div class="col-md-3">
+                <p><i class="bi bi-headset" style="font-size: 48px;"></i><br>Raise your <br><strong>Query</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <p>Subscribe to Our Newsletter & Stay Updated</p>
+        <input type="email" placeholder="Your Email" class="p-2">
+        <button class="btn btn-dark">Subscribe</button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <p>&copy; 2024 Laser Technologies. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
